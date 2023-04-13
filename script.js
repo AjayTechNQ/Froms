@@ -38,3 +38,27 @@ let text10 = "Hello world, welcome to the universe.";
 let result3 = text10.indexOf("universe");
 console.log(result3);
 
+let text11 = "Hello planet earth, you are a great planet.";
+let result4 = text11.lastIndexOf("earth");
+console.log(result4);
+
+let text12 = "Hello Wod!";
+let length = text12.length;
+console.log(length);
+
+let text13 = "ab";
+let text14 = "ytr";
+let result5 = text13.localeCompare(text14);
+console.log(result5);
+
+let text15 = "The rain in SPAIN stays mainly in the plain";
+let result6 = text15.match("ain");
+console.log(result6);
+
+let text16 = "5";
+text16 = text16.padEnd(4,"0");
+console.log(text16);
+
+let text17 = "5";
+text17 = text17.padStart(4,"0");
+console.log(text17);
