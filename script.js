@@ -62,3 +62,78 @@ console.log(text16);
 let text17 = "5";
 text17 = text17.padStart(4,"0");
 console.log(text17);
+
+function checkPalindrome(string) {
+
+    // find the length of a string
+    const len = string.length;
+
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+// call the function
+const value = checkPalindrome(string);
+
+console.log(value);
+
+const number = parseInt(prompt('Enter the number of terms: '));
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+
+
+let sum = 0;
+const number1 = prompt('Enter a three-digit positive integer: ');
+
+// create a temporary variable
+let temp = number1;
+while (temp > 0) {
+    // finding the one's digit
+    let remainder = temp % 10;
+
+    sum += remainder * remainder * remainder;
+
+    // removing last digit from the number
+    temp = parseInt(temp / 10); // convert float into integer
+}
+// check the condition
+if (sum == number1) {
+    console.log(`${number1} is an Armstrong number`);
+}
+else {
+    console.log(`${number1} is not an Armstrong number.`);
+}
+
+function reverse_a_number(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
+}
+console.log(Number(reverse_a_number(32243)));
+
+const num1 = 5;
+const num2 = 3;
+
+// add two numbers
+const sum1 = num1 + num2;
+
+// display the sum
+console.log(sum1);
